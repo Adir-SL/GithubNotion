@@ -17,7 +17,9 @@
       
       <script>
         let userName = window.location.hash.slice(1);
-        new GitHubCalendar(".calendar", userName);
+        if(userName !== ''){
+          new GitHubCalendar(".calendar", userName);
+        }
       </script>
 </body>
 </html>
