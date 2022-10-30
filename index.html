@@ -16,7 +16,8 @@
       </div>
       
       <script>
-        new GitHubCalendar(".calendar", "Adir-SL");
+        let userName = window.location.hash.slice(1);
+        new GitHubCalendar(".calendar", userName);
       </script>
 </body>
 </html>
